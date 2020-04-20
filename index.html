@@ -16,6 +16,12 @@
 <!--	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="js/jquery.mobilemenu.js"></script>
 
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+<!--	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
 <!--	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>-->
 	<script>
 		$(document).ready(function(){
@@ -26,6 +32,24 @@
 			$("#tooltip-3").tooltip();
 			$("#tooltip-4").tooltip();
 			$("#tooltip-5").tooltip();
+
+			//the Tabs widget 
+			$( "#tabs" ).tabs();
+			
+			// $("#vprospect").click(function() {
+			// 	$("#solution").load("solutions.html #vprospect");
+			// });
+			// $("#vconvert").click(function() {
+			// 	$("#solution").load("solutions.html #vconvert");
+			// });
+			// $("#vretain").click(function() {
+			// 	$("#solution").load("solutions.html #vretain");
+			// });
+
+			//accordion
+		
+		  $( "#accordion" ).accordion();
+		  
 		});
 	</script>
 </head>
@@ -59,12 +83,62 @@
 			<h4>Our Solutions</h4> 
 			
 			<!-- INSERT TABS HERE -->
+			<div id = "tabs">
+				<ul>
+					<li><a href = "#tabs-1">vProspect 2.0</a></li>
+					<li><a href = "#tabs-2">vConvert 2.0</a></li>
+					<li><a href = "#tabs-3">vRetain 1.0</a></li>
+				 </ul>
+					
+				 <div id = "tabs-1">
+					<p><strong>vProspect 2.0</strong></p>
+					<p><img src="images/logo_vprospect.gif" width="63" height="36" style="float:left;">
+						Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.
+						</p>
+				 </div>
+					
+				 <div id = "tabs-2">
+					<p><strong>vConvert 2.0</strong></p>
+					<p>	<img src="images/logo_vconvert.gif" width="63" height="36" style="float:left;">Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
+				 </div>
+					
+				 <div id = "tabs-3">
+					<p><strong>vRetain 1.0</strong></p>
+					<p><img src="images/logo_vretain.gif" width="63" height="36" style="float:left;">
+						Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
+				 </div>
+			  </div>
+
+
 		</section>
 		
 		<section id="testimonials" class="five columns">
 			<h4>Client Testimonials</h4>
 
 			<!-- INSERT ACCORDION HERE -->
+			<div id="accordion">
+			<h3>Section 1</h3>
+			<div>
+				<p>
+					Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.
+				</p>
+				<p>	<em>Iona Ford<br>
+					President<br>
+					Chevy Dealers Association</em></p>
+			  </div>
+			  <h3>Section 2</h3>
+			  <div>
+				<p>
+					Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.
+				</p>
+				<p><em>Robin Banks<br>
+					CEO<br>
+					Profits Financial, Inc.</em></p>
+			  </div>
+			</div>
+
+			
+
 		</section>
 	</main>
 </body>
