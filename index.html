@@ -12,11 +12,20 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset=utf-8></script> 
+<!--	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="js/jquery.mobilemenu.js"></script>
+
+<!--	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>-->
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
+			//syntax(the Tooltip widget): $(selector, context).tooltip(options);
+			$("#tooltip-1").tooltip();
+			$("#tooltip-2").tooltip();
+			$("#tooltip-3").tooltip();
+			$("#tooltip-4").tooltip();
+			$("#tooltip-5").tooltip();
 		});
 	</script>
 </head>
@@ -28,11 +37,11 @@
 		
 		<nav class="thirteen columns">
 			<ul id="responsive-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="solutions.html">Solutions</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="index.html" id = "tooltip-1" title = "Welcome to Vecta Corp website">Home</a></li>
+				<li><a href="aboutus.html" id = "tooltip-2" title = "Meet Our Teem">About Us</a></li>
+				<li><a href="solutions.html" id = "tooltip-3" title = "Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers.">Solutions</a></li>
+				<li><a href="support.html" id = "tooltip-4" title = "Watch and Read more about our Product">Support</a></li>
+				<li><a href="contactus.html" id = "tooltip-5" title = "We are happy to help">Contact Us</a></li>
 			</ul>
 		</nav>
 		
