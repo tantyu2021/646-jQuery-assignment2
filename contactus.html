@@ -36,6 +36,30 @@
             //       });
             //    }
 			// });
+// form
+$( "input" ).checkboxradio();
+
+//option - without icons
+// $( "input" ).checkboxradio({
+//       icon: false
+//     });
+
+//select menu
+$( "#speed" ).selectmenu();
+ $( "#files" ).selectmenu();
+ $( "#companysize" )
+      .selectmenu()
+      .selectmenu( "menuWidget" )
+        .addClass( "overflow" );
+ $( "#salutation" ).selectmenu();
+//submit button
+$( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).click( function( event ) {
+      event.preventDefault();
+    } );
+
+
+
 		});
 	</script>
 </head>
@@ -65,48 +89,93 @@
 				<fieldset>
 			    <legend>Contact a Sales Representative</legend>
 			    Name:
-			    <input type="text" name="name" maxlength="30" required="">
+			    <input type="text" id="nameW" name="name" maxlength="30" required="">
 			    Company Name:
-			    <input type="text" name="companyname" maxlength="30" required="">
+			    <input type="text" id="nameCW" name="companyname" maxlength="30" required="">
 			    Phone:
-			    <input type="tel" name="phonenumber" maxlength="25" required="" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Format: 555-555-5555">
+			    <input type="tel" id="phoneNumber" name="phonenumber" maxlength="25" required="" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Format: 555-555-5555">
 			    
 			    Email:
 				<input type="email" name="email" maxlength="30" required="">
 			   
-                What VectaCorp products are you interested in?<br>
+
+<p>Checkbox</p>
+  <fieldset>
+    <legend><p>What VectaCorp products are you interested in?</p></legend>
+    <label for="checkbox-1">vProspect 2.0</label>
+    <input type="checkbox" name="checkbox-1" id="checkbox-1">
+    <label for="checkbox-2">vConvert 2.0</label>
+    <input type="checkbox" name="checkbox-2" id="checkbox-2">
+    <label for="checkbox-3">vRetain 1.0</label>
+    <input type="checkbox" name="checkbox-3" id="checkbox-3">
+  </fieldset>
+
+          <!--      What VectaCorp products are you interested in?<br>
 			    <label for="vProspect"><input type="checkbox" name="product" value="vProspect" id="vProspect">vProspect 2.0</label>
 			    <label for="vConvert"><input type="checkbox" name="product" value="vConvert" id="vConvert">vConvert 2.0</label>
-			    <label for="vRetain"><input type="checkbox" name="product" value="vRetain" id="vRetain">vRetain 1.0</label>
+			    <label for="vRetain"><input type="checkbox" id="retain" name="product" value="vRetain">vRetain 1.0</label>-->
 			    
-			    <br>
-			    What is your current infrastructure?<br>
+				<br>
+				<p>Radio Group</p>
+				<fieldset> <!---->
+				  <legend><p>What is your current infrastructure?</p></legend>
+				  <label for="radio-1">Mac</label>
+				  <input type="radio" name="radio-1" id="radio-1">
+				  <label for="radio-2">Linux</label>
+				  <input type="radio" name="radio-1" id="radio-2">
+				  <label for="radio-3">Unix</label>
+				  <input type="radio" name="radio-1" id="radio-3">
+				  <label for="radio-4">Windows</label>
+				  <input type="radio" name="radio-1" id="radio-4">
+				</fieldset>
+								
+		<!--	    What is your current infrastructure?<br>
 			    <label for="Mac"><input type="radio" name="infrastructure" value="Mac" id="Mac">Mac</label>
 			    <label for="Linux"><input type="radio" name="infrastructure" value="Linux" id="Linux">Linux</label>
 			    <label for="Unix"><input type="radio" name="infrastructure" value="Unix" id="Unix">Unix</label>
-			    <label for="Windows"><input type="radio" name="infrastructure" value="Windows" id="Windows">Windows</label>
+			    <label for="Windows"><input type="radio" name="infrastructure" value="Windows" id="Windows">Windows</label> -->
 
-			    <br>
-			    How many employees do you have?
+				<br><!--Select a number-->				
+				<label for="companysize">How many employees do you have?</label>
+				<select name="companysize" id="companysize">
+				  <option>1-10</option>
+				  <option selected="selected">11-100</option>
+				  <option>101-1000</option>
+				  <option>More than 1000</option>		
+				</select>
+			 
+	<!--		    How many employees do you have?
 			    <select name="companysize">
                     <option value="1-10">1-10</option>
                     <option value="11-100">11-100</option>
                     <option value="101-1000">101-1000</option>
                     <option value="More than 1000">More than 1000</option>
-		        </select>
-                
-			    How did you hear about us?
+		        </select>-->
+
+				<label for="hearaboutus">How did you hear about us?</label><!--for="salutation"-->
+				<select name="hearaboutus" id="hearaboutus">
+				  <option disabled selected>Please pick one</option>
+				  <option>Magazine Ad</option>
+				  <option>Radio Ad</option>
+				  <option>TV Ad</option>
+				  <option>Word of Mouth</option>
+				  <option>Other</option>
+				</select>
+				  
+		<!--	    How did you hear about us?
 			    <select name="hearaboutus" multiple="" size="5">
                     <option value="Magazine Ad">Magazine Ad</option>
                     <option value="Radio Ad">Radio Ad</option>
                     <option value="TV Ad">TV Ad</option>
                     <option value="Word of Mouth">Word of Mouth</option>
                     <option value="Other">Other</option>
-		        </select>
+		        </select>-->
                 
 			    Questions or comments for our sales representatives?
-			    <textarea name="questions" size="30" rows="5"></textarea>
-			    <input type="submit" name="submit" value="Submit Now">
+				<textarea name="questions" size="30" rows="5"></textarea>
+				
+				<input type="submit" value="A submit button">
+			<!--    <input type="submit" name="submit" value="Submit Now">-->
 		    	</fieldset>
 			</form>
 	    </section>
