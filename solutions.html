@@ -12,26 +12,96 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset=utf-8></script> 
+<!--external own file:	<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset=utf-8></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
-	<script src="js/jquery.mobilemenu.js"></script>	 
+	<script src="js/jquery.mobilemenu.js"></script>	
+	
+	<!--from jQuery-download-CDN Google CDN - jQuery UI (2 links: css & script) -...for tabs, nav tooltip-->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<!--sticky plugin:-->	<script src="js/jquery.sticky.js" type="text/javascript"></script> 
+	<!--jQuery Back to Top plugin :-->
+		<script src="js/floating-totop-button.min.js" type="text/javascript"></script>
+		<link href="css/floating-totop-button.css" rel="stylesheet">
+
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
 			//syntax(the Tooltip widget): $(selector, context).tooltip(options);  option position in the tooltip function of JqueryUI.
-			$("#tooltip-1").tooltip({
+			$("#tooltip-1").tooltip();
+			$("#tooltip-2").tooltip();
+			$("#tooltip-3").tooltip({
 				position: {
-                  my: "center bottom",
-                  at: "center top-10",
-                  collision: "none"
+                //   my: "center bottom",
+                //   at: "center top-0",
+				//   collision: "none",
+				  track:true
                }
 			});
-			$("#tooltip-2").tooltip();
-			$("#tooltip-3").tooltip();
 			$("#tooltip-4").tooltip();
 			$("#tooltip-5").tooltip();
+
+//StickyNav plugin for a the Quick Nav
+			$(document).ready(function(){
+	$("#sticker").sticky({topSpacing:0});
+	
+//for accordion
+// $( "#accordion" ).accordion();
+
+
+  });
 		});
 	</script>
+
+<style>
+	/* for vertical tabs*/
+	
+	/* for sticky nav */
+/*	#sticker {
+      background: #bada55;
+      color: white;
+      width: 300px;
+      font-family: Droid Sans;
+      font-size: 40px;
+      line-height: 1.6em;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+      border-radius: 50px;
+      float:right;
+    } */
+
+   #sticker {
+      background: #ccc;
+      color: white;
+      width: 250px;   
+      text-align: left;
+      padding: 20px;
+	 /* float:right;*/
+	  line-height: 1.6em;
+	  margin-right: 10px;
+	  padding-right: 20px;
+	}
+	#sticker a{
+		color: #fff;
+		text-decoration: none;
+		font-size: 25px;
+		text-shadow: 0 1px 1px rgba(0,0,0,.5);
+	  font-weight: bold;
+	  line-height: 1.6em;
+	}   
+	#welcome h5 {
+      background: #ccc;
+      color: white;    
+	  font-family: sans-serif;
+	  width: fit-content;
+	} /*	*/
+
+	</style>
+
 </head>
 <body>
 	<main class="container">
@@ -57,12 +127,89 @@
 			<h4>Our Solutions</h4>
 
 			<p>&nbsp;</p>
+
+			<h5>Section 1</h5>
+				<div id="vProspect 2.0">
+					<h3>vProspect 2.0</h3>
+					<p>
+						Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience. vProspect can help your business:
+
+Define your target audience and competition.
+
+Research your competition and your target audience's behavior, needs, technical know-how level, etc.
+
+Establish a conceptual and visual identity that corresponds to the defined direction of the company.
+
+Ensure consistency across all media.
+
+Establish corporate guidelines for cohesiveness of any future developments.
+
+Define and/or re-defining your service and/or product offerings.
+
+Define expansion plans and strategies.
+
+Implement Search Engine Optimization of all Online materials.
+					</p>
+					<p>	<em>Back to top</em></p>
+				  </div>
+
+				  <h5>Section 2</h5>
+				  <div id="vConvert 2.0">
+					  <h3>vConvert 2.0</h3>
+					<p>
+						Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level. vConvert can help your business:
+
+						Build a visual and functional user front end that focuses exclusively on providing an exceptional user experience while conveying company, service and product information.
+						
+						Cause the desired emotional response in a user to facilitate conversion to a client.
+						
+						Build sites that move beyond merely conveying information. They advertise, motivate, excite and inspire. Users are more likely to remember and recommend your site.
+						
+						Research your target audience's behavior, needs, technical know-how and level, etc.
+						
+						Develop any applicable back-end programs to facilitate user interaction with the company and offerings on a highly functional level to allow any kind of online transactions and a completely centralized information collection and access point, accessible from any location.
+						
+						Create an architecture to display the site content and information in a logical and easy to access manner. Facilitating thereby the desired ease, for the user to find what they are looking for quickly and easily. Allowing the user to focus on the subject at hand rather than searching for information on the site.				
+					</p>
+					<p><em>Back to top</em></p>
+				  </div>
+
+				  <h5>Section 3</h5>
+				  <div id="vRetain 1.0">
+					  <h3>vRetain 1.0</h3>
+					<p>
+Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues. vRetain can help your business:
+
+Streamline existing business infrastructures by utilizing technology for automation, information centralization, and information sharing among all business units and departments, as well as efficient prospect & customer tracking and interaction within the company.
+
+Collect crucial information, data and statistics that allow a company to keep in touch with users in a very customized, highly targeted way.
+
+Analyze site visitor behavior through traffic analysis, usability studies and interactive polling. Recommending and making site and application adjustments to improve usability and user experience.
+					</p>
+					<p><em>Back to top</em></p>
+				  </div>				  
+				
 		</section>
 		
 		<section id="testimonials" class="five columns">
 			<h4>Quick Nav</h4>
 
 			<!-- INSERT ACCORDION HERE -->
+			<!-- sticky nav HERE -->
+			<div id="sticker">
+				<p></p>
+				<li><a href="#vProspect 2.0">vProspect 2.0</a></li>
+				<li><a href="#vConvert 2.0">vConvert 2.0</a></li>
+				<li><a href="#vRetain 1.0">vRetain 1.0</a></li>
+			  </div>
+	<!--	<nav>
+			<ul>
+				<li>vProspect 2.0</li>
+				<li>vConvert 2.0</li>
+				<li>vRetain 1.0</li>
+			</ul>
+		</nav>-->
+				
 		</section>
 	</main>
 </body>

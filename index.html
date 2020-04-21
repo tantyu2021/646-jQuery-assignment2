@@ -17,6 +17,7 @@
 <!--	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 	<script src="js/jquery.mobilemenu.js"></script>
 
+	<!--from jQuery-download-CDN Google CDN - jQuery UI (2 links: css & script) -...for tabs, nav tooltip-->
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <!--lab37	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-darkness/jquery-ui.css">
@@ -46,10 +47,16 @@
 			// 	$("#solution").load("solutions.html #vretain");
 			// });
 
-			//accordion
-		
-		  $( "#accordion" ).accordion();
-		  
+			//accordion	
+		 // $( "#accordion" ).accordion();
+		 $( "#accordion" ).accordion({
+	  collapsible: true,
+	  heightStyle: "content"
+    }); 
+
+
+
+
 		});
 	</script>
 </head>
@@ -84,10 +91,10 @@
 			
 			<!-- INSERT TABS HERE -->
 			<div id = "tabs">
-				<ul>
-					<li><a href = "#tabs-1">vProspect 2.0</a></li>
-					<li><a href = "#tabs-2">vConvert 2.0</a></li>
-					<li><a href = "#tabs-3">vRetain 1.0</a></li>
+				<ul><!-- vProspect 2.0  vConvert 2.0  vRetain 1.0-->
+					<li><a href = "#tabs-1">Tab 1</a></li>
+					<li><a href = "#tabs-2">Tab 2</a></li>
+					<li><a href = "#tabs-3">Tab 3</a></li>
 				 </ul>
 					
 				 <div id = "tabs-1">
