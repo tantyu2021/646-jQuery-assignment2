@@ -21,10 +21,13 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-	<!--sticky plugin:-->	<script src="js/jquery.sticky.js" type="text/javascript"></script> 
+	<!--sticky plugin:-->	
+	<script src="js/jquery.sticky.js" type="text/javascript"></script> 
+	
 	<!--jQuery Back to Top plugin :-->
-		<script src="js/floating-totop-button.min.js" type="text/javascript"></script>
-		<link href="css/floating-totop-button.css" rel="stylesheet">
+	<script src="js/jquery.gotop.min.js" type="text/javascript"></script>
+	<!--	<script src="js/floating-totop-button.min.js" type="text/javascript"></script>
+	<link href="css/floating-totop-button.css" rel="stylesheet">-->
 
 	<script>
 		$(document).ready(function(){
@@ -44,39 +47,19 @@
 			$("#tooltip-5").tooltip();
 
 //StickyNav plugin for a the Quick Nav
-			$(document).ready(function(){
+//			$(document).ready(function(){
 	$("#sticker").sticky({topSpacing:0});
-  });
+  //});
 
-  //back to top
-  $('body').toTopButton({});
+//back to top -Initialize the plugin to generate a default scroll to top
+  $('#goTop').goTop();
+  //$('body').toTopButton({});
  
-
-
-
-
-
 		});
 	</script>
 
 <style>
 	/* for vertical tabs*/
-	
-	/* for sticky nav */
-/*	#sticker {
-      background: #bada55;
-      color: white;
-      width: 300px;
-      font-family: Droid Sans;
-      font-size: 40px;
-      line-height: 1.6em;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.2);
-      border-radius: 50px;
-      float:right;
-    } */
 
    #sticker {
       background: #ccc;
@@ -153,9 +136,9 @@ Define and/or re-defining your service and/or product offerings.
 Define expansion plans and strategies.
 
 Implement Search Engine Optimization of all Online materials.
-					</p>
-					<a href="">	<p><em>Back to top</em></p></a>	
-				<!--	 -->
+<div id="goTop"></p><a href="">	<p><em>Back to top</em></p></a></div>	
+				<!--	
+				<div id="goTop"><p><em>Back to top</em></p></div> -->
 				  </div>
 
 				  <h5>Section 2</h5>
@@ -175,8 +158,8 @@ Implement Search Engine Optimization of all Online materials.
 						Develop any applicable back-end programs to facilitate user interaction with the company and offerings on a highly functional level to allow any kind of online transactions and a completely centralized information collection and access point, accessible from any location.
 						
 						Create an architecture to display the site content and information in a logical and easy to access manner. Facilitating thereby the desired ease, for the user to find what they are looking for quickly and easily. Allowing the user to focus on the subject at hand rather than searching for information on the site.				
-					</p>
-			<a href="">	<p><em>Back to top</em></p></a>	
+						<div id="goTop"></p><a href="">	<p><em>Back to top</em></p></a>	</div>	 
+				      <!--<div id="goTop"><p><em>Back to top</em></p></div>-->
 				  </div>
 
 				  <h5>Section 3</h5>
@@ -190,8 +173,8 @@ Streamline existing business infrastructures by utilizing technology for automat
 Collect crucial information, data and statistics that allow a company to keep in touch with users in a very customized, highly targeted way.
 
 Analyze site visitor behavior through traffic analysis, usability studies and interactive polling. Recommending and making site and application adjustments to improve usability and user experience.
-					</p>
-					<a href="">	<p><em>Back to top</em></p></a>	
+<div id="goTop"></p><a href="">	<p><em>Back to top</em></p></a>	</div><!--	 -->
+				<!--<p><em>Back to top</em></p></div> -->
 		<!--	<button><p><em>Back to top</em></p></button>	 -->
 				  </div>				  
 				
